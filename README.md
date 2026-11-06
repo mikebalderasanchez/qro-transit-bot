@@ -25,7 +25,7 @@ Solo consulta las páginas y los datos que el sitio público ya carga en cualqui
 
 ## Lo que nunca hacemos
 
-- Consultar saldos de tarjetas, ni de forma automática ni masiva.
+- Consultar saldos de tarjetas de forma automática, masiva o desde nuestro servidor. La app permite que cada persona consulte el saldo de **sus propias** tarjetas: esa consulta sale de su teléfono solo cuando la pide (como si usara el sitio), con el User-Agent `qro-transit-app/<versión>` y máximo una vez por minuto.
 - Iniciar sesión, enviar credenciales o hacer pagos.
 - Descompilar la app oficial, interceptar su tráfico ni usar endpoints que el sitio web no use.
 - Reintentar en bucle cuando el sitio falla: si algo responde con error, el bot se detiene y usamos los últimos datos guardados.
